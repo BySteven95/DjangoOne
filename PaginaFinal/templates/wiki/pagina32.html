@@ -1,0 +1,41 @@
+{% extends 'layouts/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<body>
+  <h1 class="centrado">PhysX</h1>
+  <div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1o0Nuq71gI4?si=N6OTsU8nLZY6l9l4"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+    <p>
+      PhysX es un motor propietario de capa de software intermedia (middleware) y un kit de desarrollo diseñados para
+      llevar a cabo cálculos físicos muy complejos. Conocido anteriormente como el kit de desarrollo de software de
+      NovodeX, fue originalmente diseñado por AGEIA y tras la adquisición de AGEIA, es actualmente desarrollado por
+      Nvidia e integrado en sus chip gráficos más recientes.
+    </p>
+    <p>
+      El término PhysX también puede referirse a una tarjeta con unidad de procesamiento de física (PPU, por sus siglas
+      en inglés) la cual proporciona aceleración de hardware cuando es integrada en tarjetas gráficas (estas tarjetas
+      liberan al procesador de tareas propias del renderizado de imagen proporcionando una mayor tasa de fotogramas por
+      segundo). Por tanto, es importante saber si está hablando de la parte hardware o de la software (middleware)
+      cuando haya una referencia al término PhysX dado que es fuente común de confusión.
+    </p>
+    <p>
+      Los motores físicos de middleware permiten a los desarrolladores de videojuegos abstraerse durante el desarrollo,
+      ya que PhysX proporciona funciones especializadas en simulaciones físicas complejas, lo cual da como resultado una
+      alta productividad en la escritura de código.
+    </p>
+    <p>
+      El 20 de julio de 2005, Sony firmó un acuerdo con AGEIA para usar la SDK de NovodeX en la consola PlayStation 3.
+      Esto provocó que muchos desarrolladores empezaran a crear juegos muy complejos, antes impensables, gracias a esta
+      tecnología. AGEIA afirmó que el PhysX era capaz de realizar estos procesos de cálculos físicos cien veces mejor
+      que cualquier procesador creada anteriormente.
+    </p>
+  </div>
+</body>
+
+{% endblock %}

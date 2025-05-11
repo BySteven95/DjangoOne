@@ -1,0 +1,42 @@
+{% extends 'layouts/base3.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<main>
+  <h1 class="centrado">Registrarse</h1>
+  <section class="form-register">
+    <h4>Datos de contacto</h4>
+    <form action="" method="post">
+      {% csrf_token %}
+      <p>Nombre</p>
+      <input id="nombre" name="nombre" class="controls" type="text" required>
+      <p>Apellido</p>
+      <input id="apellido" name="apellido" class="controls" type="text" required>
+      <p>Email</p>
+      <input id="email" name="email" class="controls" type="email" required>
+      <p>Direccion</p>
+      <input id="direccion" name="direccion" class="controls" type="text" required>
+      <p>Usuario</p>
+      <input id="usuario" name="usuario" class="controls" type="text" required>
+      <p>Contraseña (8 carácteres mínimo)</p>
+      <input id="contraseña1" name="contraseña1" class="controls" type="password" minlength="8" maxlength="20" required>
+      <p>Confirma tu contraseña</p>
+      <input id="contraseña2" name="contraseña2" class="controls" type="password" minlength="8" maxlength="20" required>
+      <center>
+        {% if messages %}
+        {% for message in messages %}
+        <div class="alert-error" role="alert">
+          {{ message }}
+        </div>
+        {% endfor %}
+        {% endif %}
+        <button class="buttons" type="submit">Registrarse</button>
+      </center>
+    </form>
+  </section>
+  
+</main>
+
+{% endblock %}

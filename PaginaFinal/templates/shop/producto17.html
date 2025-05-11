@@ -1,0 +1,62 @@
+{% extends 'layouts/base5.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<h1>Nvidia 2080 Ti</h1>
+
+<main>
+  <div class="container-img">
+    <center>
+      <img src="{% static '2080Ti.png' %}" alt="imagen-producto" />
+    </center>
+  </div>
+  <div class="container-info-product">
+    <div class="container-price">
+      <span>$ 3.399.900</span>
+    </div>
+    <div class="container-add-cart">
+      <div class="container-quantity">
+        <input type="text" id="producto" value="RTX 2080 Ti" hidden>
+        <input type="number" name="inputValue" id="inputValue" placeholder="1" value="1" min="1" class="input-quantity"/>
+        <div class="btn-increment-decrement">
+          <i class="fa-solid fa-chevron-up" id="increment"></i>
+          <i class="fa-solid fa-chevron-down" id="decrement"></i>
+        </div>
+      </div>
+      <a id="dynamicLink" href="/shop/agregarespecifico/{{usuario}}/RTX 2080 Ti/1">
+        <input type="button" class="btn-add-to-cart" value="Añadir al carrito"></input>
+      </a>
+    </div>
+    <div class="container-description">
+      <div class="title-description">
+        <h4>Descripción</h4>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+      <div class="text-description">
+        <p>El tope de gama de la serie 20, ya es un poco vieja, su lanzamiento fue en 2018, pero
+        cumple con lo necesario para ser una tarjeta competente.
+        </p>
+      </div>
+    </div>
+    <div class="container-additional-information">
+			<div class="title-additional-information">
+				<h4>Información adicional</h4>
+				<i class="fa-solid fa-chevron-down"></i>
+			</div>
+			<div class="text-additional-information hidden">
+				<ul class="listaintegrada">
+          <li>Ciclos del Reloj Interno: 1545+ MHz</li>
+          <li>Memoria: 11264 MB</li>
+          <li>Tipo de Memoria: GDDR6</li>
+          <li>Velocidad del bus: 616 GB/s</li>
+          <li>Número de núcleos inteligentes: 4352 CUDA</li>
+          <li>Potencia energética: 250 W</li>
+        </ul>
+			</div>
+		</div>
+  </div>
+</main>
+
+{% endblock %}

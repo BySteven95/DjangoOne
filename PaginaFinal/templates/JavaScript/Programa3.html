@@ -1,0 +1,28 @@
+{% extends 'layouts/base6.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<main>
+  <h1 class="centrado">Programa 3</h1>
+  <form class="form" id="contenido">
+    <p>Respuestas Correctas</p>
+    <input class="buttons" type="number" id="Correctas" required>
+    <p>Respuestas Incorrectas</p>
+    <input class="buttons" type="number" id="Incorrectas" required>
+    <p>Respuestas En Blanco</p>
+    <input class="buttons" type="number" id="EnBlanco" required>
+    <button class="buttons" id="btnOK">Calcular Puntaje Final</button>
+  </form>
+
+  <section class="form">
+    <center>
+      <button class="buttons" id="btnBACK">Volver</button>
+    </center>
+  </section>
+</main>
+
+<script src="{% static 'Programa3.js' %}"></script>
+
+{% endblock %}

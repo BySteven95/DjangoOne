@@ -1,0 +1,382 @@
+{% extends 'layouts/base4.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<main>
+  
+  <div class="tienda">
+    <div></div>
+    <div class="centrado">Tienda</h1></div>
+    <div class="container-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5e9401"
+        class="icon-cart">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+      </svg>
+      <div class="count-products">
+        <span id="contador-productos">{{productos.count}}</span>
+      </div>
+      <div class="container-cart-products hidden-cart">
+        {% for producto in productos %}
+          <div class="cart-product">
+            <div class="info-cart-product">
+              <span class="cantidad-producto-carrito">{{producto.Cantidad}}</span>
+              <p class="titulo-producto-carrito">{{producto.Producto_En_Carrito}}</p>
+              <span class="precio-producto-carrito">{{producto.Total_Precio_Producto}}</span>
+            </div>
+            <a href="/shop/eliminar/{{usuario}}/{{producto.Producto_En_Carrito}}">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="icon-close">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+            </a>
+          </div>
+        {% endfor %}
+        <div class="cart-total">
+          <h3>Total: </h3>
+          <span class="total-pagar">${{Total_compras}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="subtitulo">
+    <h1>RTX 40 SERIES</h1>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <div class="card-img">
+        <a href="/shop/producto1/{{usuario}}"><img class="img" src="{% static '4090.avif' %}" alt="NVIDIA RTX 4090"
+            title="NVIDIA RTX 4090"></a>
+      </div>
+      <div class="card-body">
+        <h3>NVIDIA RTX 4090</h3>
+        <p>$ 8.849.000</p>
+        <div class="buttons">
+          <a href="/shop/agregar/{{usuario}}/RTX 4090/1"><input class="btn btn-cart" type="button" value="Agregar al carrito"></a>
+          <button class="btn btn-like"><img src="{% static 'heart.png' %}" width="30px" height="30px" alt=""></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <a href="/shop/producto2/{{usuario}}"><img class="img" src="{% static '4080.avif' %}" alt="NVIDIA RTX 4080"
+            title="NVIDIA RTX 4080"></a>
+      </div>
+      <div class="card-body">
+        <h3>NVIDIA RTX 4080</h3>
+        <p>$ 5.690.000</p>
+        <div class="buttons">
+          <a href="/shop/agregar/{{usuario}}/RTX 4080/1"><input class="btn btn-cart" type="button" value="Agregar al carrito"></a>
+          <button class="btn btn-like"><img src="{% static 'heart.png' %}" width="30px" height="30px" alt=""></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <a href="/shop/producto3/{{usuario}}"><img class="img" src="{% static '4070Ti.webp' %}" alt="NVIDIA RTX 4070Ti"
+            title="NVIDIA RTX 4070Ti"></a>
+      </div>
+      <div class="card-body">
+        <h3>NVIDIA RTX 4070 Ti</h3>
+        <p>$ 3.850.000</p>
+        <div class="buttons">
+          <a href="/shop/agregar/{{usuario}}/RTX 4070 Ti/1"><input class="btn btn-cart" type="button" value="Agregar al carrito"></a>
+          <button class="btn btn-like"><img src="{% static 'heart.png' %}" width="30px" height="30px" alt=""></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container">
+
+    <div class="card">
+      <div class="card-img">
+        <a href="/shop/producto4/{{usuario}}"><img class="img" src="{% static '4070.webp' %}" alt="NVIDIA RTX 4070"
+            title="NVIDIA RTX 4070"></a>
+      </div>
+      <div class="card-body">
+        <h3>NVIDIA RTX 4070</h3>
+        <p>$ 3.000.000</p>
+        <div class="buttons">
+          <a href="/shop/agregar/{{usuario}}/RTX 4070/1"><input class="btn btn-cart" type="button" value="Agregar al carrito"></a>
+          <button class="btn btn-like"><img src="{% static 'heart.png' %}" width="30px" height="30px" alt=""></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <a href="/shop/producto5/{{usuario}}"><img class="img" src="{% static '4060Ti.avif' %}" alt="NVIDIA RTX 4060Ti"
+            title="NVIDIA RTX 4060Ti"></a>
+      </div>
+      <div class="card-body">
+        <h3>NVIDIA RTX 4060 Ti</h3>
+        <p>$ 2.350.000</p>
+        <div class="buttons">
+          <a href="/shop/agregar/{{usuario}}/RTX 4060 Ti/1"><input class="btn btn-cart" type="button" value="Agregar al carrito"></a>
+          <button class="btn btn-like"><img src="{% static 'heart.png' %}" width="30px" height="30px" alt=""></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <a href="/shop/producto6/{{usuario}}"><img class="img" src="{% static '4060.png' %}" alt="NVIDIA RTX 4060"
+            title="NVIDIA RTX 4060"></a>
+      </div>
+      <div class="card-body">
+        <h3>NVIDIA RTX 4060</h3>
+        <p>$ 1.582.296</p>
+        <div class="buttons">
+          <a href="/shop/agregar/{{usuario}}/RTX 4060/1"><input class="btn btn-cart" type="button" value="Agregar al carrito"></a>
+          <button class="btn btn-like"><img src="{% static 'heart.png' %}" width="30px" height="30px" alt=""></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="subtitulo">
+    <h1>RTX 30 SERIES</h1>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <div class="card-img">
+        <a href="/shop/producto7/{{usuario}}"><img class="img" src="{% static '3090Ti.png' %}" alt="NVIDIA RTX 3090Ti"
+            title="NVIDIA RTX 3090Ti"></a>
+      </div>
+      <div class="card-body">
+        <h3>NVIDIA RTX 3090 Ti</h3>
+        <p>$ 8.849.000</p>
+        <div class="buttons">
+          <a href="/shop/agregar/{{usuario}}/RTX 3090 Ti/1"><input class="btn btn-cart" type="button" value="Agregar al carrito"></a>
+          <button class="btn btn-like"><img src="{% static 'heart.png' %}" width="30px" height="30px" alt=""></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <a href="/shop/producto8/{{usuario}}"><img class="img" src="{% static '3090.png' %}" alt="NVIDIA RTX 3090"
+            title="NVIDIA RTX 3090"></a>
+      </div>
+      <div class="card-body">
+        <h3>NVIDIA RTX 3090</h3>
+        <p>$ 7.827.850</p>
+        <div class="buttons">
+          <a href="/shop/agregar/{{usuario}}/RTX 3090/1"><input class="btn btn-cart" type="button" value="Agregar al carrito"></a>
+          <button class="btn btn-like"><img src="{% static 'heart.png' %}" width="30px" height="30px" alt=""></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <a href="/shop/producto9/{{usuario}}"><img class="img" src="{% static '3080Ti.png' %}" alt="NVIDIA RTX 3080Ti"
+            title="NVIDIA RTX 3080Ti"></a>
+      </div>
+      <div class="card-body">
+        <h3>NVIDIA RTX 3080 Ti</h3>
+        <p>$ 5.961.750</p>
+        <div class="buttons">
+          <a href="/shop/agregar/{{usuario}}/RTX 3080 Ti/1"><input class="btn btn-cart" type="button" value="Agregar al carrito"></a>
+          <button class="btn btn-like"><img src="{% static 'heart.png' %}" width="30px" height="30px" alt=""></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <div class="card-img">
+        <a href="/shop/producto10/{{usuario}}"><img class="img" src="{% static '3080.png' %}" alt="NVIDIA RTX 3080"
+            title="NVIDIA RTX 3080"></a>
+      </div>
+      <div class="card-body">
+        <h3>NVIDIA RTX 3080</h3>
+        <p>$ 3.799.900</p>
+        <div class="buttons">
+          <a href="/shop/agregar/{{usuario}}/RTX 3080/1"><input class="btn btn-cart" type="button" value="Agregar al carrito"></a>
+          <button class="btn btn-like"><img src="{% static 'heart.png' %}" width="30px" height="30px" alt=""></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <a href="/shop/producto11/{{usuario}}"><img class="img" src="{% static '3070Ti.png' %}" alt="NVIDIA RTX 3070Ti"
+            title="NVIDIA RTX 3070Ti"></a>
+      </div>
+      <div class="card-body">
+        <h3>NVIDIA RTX 3070 Ti</h3>
+        <p>$ 4.400.000</p>
+        <div class="buttons">
+          <a href="/shop/agregar/{{usuario}}/RTX 3070 Ti/1"><input class="btn btn-cart" type="button" value="Agregar al carrito"></a>
+          <button class="btn btn-like"><img src="{% static 'heart.png' %}" width="30px" height="30px" alt=""></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <a href="/shop/producto12/{{usuario}}"><img class="img" src="{% static '3070.png' %}" alt="NVIDIA RTX 3070"
+            title="NVIDIA RTX 3070"></a>
+      </div>
+      <div class="card-body">
+        <h3>NVIDIA RTX 3070</h3>
+        <p>$ 2.950.000</p>
+        <div class="buttons">
+          <a href="/shop/agregar/{{usuario}}/RTX 3070/1"><input class="btn btn-cart" type="button" value="Agregar al carrito"></a>
+          <button class="btn btn-like"><img src="{% static 'heart.png' %}" width="30px" height="30px" alt=""></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <div class="card-img">
+        <a href="/shop/producto13/{{usuario}}"><img class="img" src="{% static '3060Ti.png' %}" alt="NVIDIA RTX 3060Ti"
+            title="NVIDIA RTX 3060Ti"></a>
+      </div>
+      <div class="card-body">
+        <h3>NVIDIA RTX 3060 Ti</h3>
+        <p>$ 2.549.000</p>
+        <div class="buttons">
+          <a href="/shop/agregar/{{usuario}}/RTX 3060 Ti/1"><input class="btn btn-cart" type="button" value="Agregar al carrito"></a>
+          <button class="btn btn-like"><img src="{% static 'heart.png' %}" width="30px" height="30px" alt=""></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <a href="/shop/producto14/{{usuario}}"><img class="img" src="{% static '3060.png' %}" alt="NVIDIA RTX 4090"
+            title="NVIDIA RTX 4090"></a>
+      </div>
+      <div class="card-body">
+        <h3>NVIDIA RTX 3060</h3>
+        <p>$ 2.350.000</p>
+        <div class="buttons">
+          <a href="/shop/agregar/{{usuario}}/RTX 3060/1"><input class="btn btn-cart" type="button" value="Agregar al carrito"></a>
+          <button class="btn btn-like"><img src="{% static 'heart.png' %}" width="30px" height="30px" alt=""></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <a href="/shop/producto15/{{usuario}}"><img class="img" src="{% static '3050.png' %}" alt="NVIDIA RTX 3050"
+            title="NVIDIA RTX 3050"></a>
+      </div>
+      <div class="card-body">
+        <h3>NVIDIA RTX 3050</h3>
+        <p>$ 1.749.900</p>
+        <div class="buttons">
+          <a href="/shop/agregar/{{usuario}}/RTX 3050/1"><input class="btn btn-cart" type="button" value="Agregar al carrito"></a>
+          <button class="btn btn-like"><img src="{% static 'heart.png' %}" width="30px" height="30px" alt=""></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="subtitulo">
+    <h1>RTX 20 SERIES</h1>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <div class="card-img">
+        <a href="/shop/producto16/{{usuario}}"><img class="img" src="{% static 'TITAN.png' %}/" alt="NVIDIA RTX TITAN"
+            title="NVIDIA RTX TITAN"></a>
+      </div>
+      <div class="card-body">
+        <h3>NVIDIA RTX Titan</h3>
+        <p>$ 15.000.000</p>
+        <div class="buttons">
+          <a href="/shop/agregar/{{usuario}}/RTX TITAN/1"><input class="btn btn-cart" type="button" value="Agregar al carrito"></a>
+          <button class="btn btn-like"><img src="{% static 'heart.png' %}" width="30px" height="30px" alt=""></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <a href="/shop/producto17/{{usuario}}"><img class="img" src="{% static '2080Ti.png' %}" alt="NVIDIA RTX 2080Ti"
+            title="NVIDIA RTX 2080Ti"></a>
+      </div>
+      <div class="card-body">
+        <h3>NVIDIA RTX 2080 Ti</h3>
+        <p>$ 3.299.900</p>
+        <div class="buttons">
+          <a href="/shop/agregar/{{usuario}}/RTX 2080 Ti/1"><input class="btn btn-cart" type="button" value="Agregar al carrito"></a>
+          <button class="btn btn-like"><img src="{% static 'heart.png' %}" width="30px" height="30px" alt=""></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <a href="/shop/producto18/{{usuario}}"><img class="img" src="{% static '2080.png' %}" alt="NVIDIA RTX 2080"
+            title="NVIDIA RTX 2080"></a>
+      </div>
+      <div class="card-body">
+        <h3>NVIDIA RTX 2080</h3>
+        <p>$ 3.299.900</p>
+        <div class="buttons">
+          <a href="/shop/agregar/{{usuario}}/RTX 2080/1"><input class="btn btn-cart" type="button" value="Agregar al carrito"></a>
+          <button class="btn btn-like"><img src="{% static 'heart.png' %}" width="30px" height="30px" alt=""></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container">
+
+    <div class="card">
+      <div class="card-img">
+        <a href="/shop/producto19/{{usuario}}"><img class="img" src="{% static '2070.png' %}/" alt="NVIDIA RTX 2070"
+            title="NVIDIA RTX 2070"></a>
+      </div>
+      <div class="card-body">
+        <h3>NVIDIA RTX 2070</h3>
+        <p>$ 2.899.900</p>
+        <div class="buttons">
+          <a href="/shop/agregar/{{usuario}}/RTX 2070/1"><input class="btn btn-cart" type="button" value="Agregar al carrito"></a>
+          <button class="btn btn-like"><img src="{% static 'heart.png' %}" width="30px" height="30px" alt=""></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <a href="/shop/producto20/{{usuario}}"><img class="img" src="{% static '2060.png' %}" alt="NVIDIA RTX 2060"
+            title="NVIDIA RTX 2060"></a>
+      </div>
+      <div class="card-body">
+        <h3>NVIDIA RTX 2060</h3>
+        <p>$ 2.199.900</p>
+        <div class="buttons">
+          <a href="/shop/agregar/{{usuario}}/RTX 2060/1"><input class="btn btn-cart" type="button" value="Agregar al carrito"></a>
+          <button class="btn btn-like"><img src="{% static 'heart.png' %}" width="30px" height="30px" alt=""></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+{% endblock %}

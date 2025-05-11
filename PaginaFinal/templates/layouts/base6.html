@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Programas Desarrollo Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="{% static 'icon_js.png' %}">
+  <link rel="stylesheet" href="{% static 'style-javascript.css' %}">
+  <link rel="stylesheet" href="{% static 'build/toggle-switch.css' %}" />
+  <link
+    href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  
+</head>
+
+<body>
+
+  <header>
+  </header>
+
+  {% block content %}
+  {% endblock %}
+  
+</body>
+
+<footer>
+</footer>
+
+</html>

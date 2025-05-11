@@ -1,0 +1,48 @@
+{% extends 'layouts/base6.html' %}
+
+{% load static %}
+
+{% block content %}
+
+  <main>
+    <div class="alert alert-danger d-none" role="alert" id="alert">
+      A simple danger alert—check it out!
+    </div>
+    <h1 class="centrado">Programa 10</h1>
+    <form class="form" id="contenido">
+      <p>Ingrese Salario</p>
+      <input type="number" class="buttons" id="salario" >
+      <p>Ingrese Días Trabajados</p>
+      <input type="number" class="buttons" id="dias" >
+      <p>Ingrese Horas Extras Diurnas</p>
+      <input type="number" class="buttons" id="hed" >
+      <p>Ingrese Horas Extras Nocturnas</p>
+      <input type="number" class="buttons" id="hen" >
+      <p>Ingrese Horas Extras Festivas Diurnas</p>
+      <input type="number" class="buttons" id="hefd" >
+      <p>Ingrese Horas Extras Festivas Nocturnas</p>
+      <input type="number" class="buttons" id="hefn" >
+      <center>
+        <label class="a8z-toggle-switch" data-style="rounded" data-color="green" data-label="left">
+          <p>¿Con Recargo Nocturno?</p>
+          <input type="checkbox" id="example_default_1" name="rn">
+          <span class="toggle">
+            <span class="switch"></span>
+          </span>
+          <span class="label"></span>
+        </label>
+      </center>
+      <button class="buttons" id="btnOK">OK</button>
+    </form>
+
+    <section class="form">
+      <center>
+        <button class="buttons" id="btnBACK">Volver</button>
+      </center>
+    </section>
+
+  </main>
+
+  <script src="{% static 'Programa10.js' %}"></script>
+  
+  {% endblock %}

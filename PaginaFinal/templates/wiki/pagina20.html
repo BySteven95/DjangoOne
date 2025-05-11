@@ -1,0 +1,110 @@
+{% extends 'layouts/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<body>
+  <h1 class="centrado">GeForce RTX 20</h1>
+  <div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/02h_dNl-C-s?si=Q212Td0S4NtSX5ID"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+    <p>La serie RTX 20 se basa en la microarquitectura de Turing y presenta el trazado de rayos en tiempo real. Las
+      tarjetas se fabrican en un nodo optimizado de 16 nm en TSMC , llamado 12nm FinFET NVIDIA (FFN). Este trazado de
+      rayos en tiempo real se acelera mediante el uso de nuevos núcleos de RT, que están diseñados para procesar
+      quadtrees y jerarquías esféricas y acelerar las pruebas de colisión con triángulos individuales.</p>
+    <table>
+      <thead>
+        <th colspan="7">GeForce 20</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Modelo</th>
+          <th>Ciclos del Reloj Interno</th>
+          <th>Memoria</th>
+          <th>Tipo de Memoria</th>
+          <th>Velocidad del Bus</th>
+          <th># De Nucleos Inteligentes</th>
+          <th>Potencia Energética</th>
+        </tr>
+        <tr>
+          <td>GeForce RTX 2060 </td>
+          <td>1365 MHz</td>
+          <td>6144 MB</td>
+          <td>GDDR6</td>
+          <td>336 GB/s</td>
+          <td>1920 CUDA</td>
+          <td>160 W</td>
+        </tr>
+        <tr>
+          <td>GeForce RTX 2070</td>
+          <td>1620 MHz</td>
+          <td>8192 MB</td>
+          <td>GDDR6</td>
+          <td>448 GB/s</td>
+          <td>2304 CUDA</td>
+          <td>175 W</td>
+        </tr>
+        <tr>
+          <td>GeForce RTX 2080</td>
+          <td>1710 MHz</td>
+          <td>8192 MB</td>
+          <td>GDDR6</td>
+          <td>448 GB/s</td>
+          <td>2944 CUDA</td>
+          <td>215 W</td>
+        </tr>
+        <tr>
+          <td>GeForce RTX 2080 Ti</td>
+          <td>1545+ MHz</td>
+          <td>11264 MB</td>
+          <td>GDDR6</td>
+          <td>616 GB/s</td>
+          <td>4352 CUDA</td>
+          <td>250 W</td>
+        </tr>
+        <tr>
+          <td>GeForce RTX Titan</td>
+          <td>1770 MHz</td>
+          <td>24576 MB</td>
+          <td>GDDR6</td>
+          <td>672 GB/s</td>
+          <td>4608 CUDA</td>
+          <td>280 W</td>
+        </tr>
+
+      </tbody>
+    </table>
+    <p>Adicionalmente contaban con DirectX 12.1 y 10.000 a 18.600 millones de transistores.</p>
+    <p><strong>Algunas de sus características principales eran: </strong></p>
+    <ul class="listaintegrada">
+      <li>Capacidad de cálculo de CUDA 7.5.</li>
+      <li>Núcleos de trazado de rayos (RT): aceleración de la jerarquía del volumen delimitador.</li>
+      <li>Núcleos de tensor (AI) - inteligencia artificial de red neuronal - operaciones de matriz grande.</li>
+      <li>Nuevo controlador de memoria con soporte GDDR6.</li>
+      <li>DisplayPort 1.4a con Display Stream Compression (DSC) 1.2.</li>
+      <li>Codec NVENC mejorado.</li>
+      <li>Decodificación de video por hardware PureVideo Feature Set J.</li>
+      <li>GPU Boost 4.</li>
+      <li>NVLink Bridge.</li>
+      <li>VirtualLink VR.</li>
+    </ul>
+    <hr size="5" width="95%" color="#000000">
+    <center>
+      <p><a
+          href="https://commons.wikimedia.org/wiki/File:MSI_GeForce_RTX_2080_VENTUS_OC_Radiatoren_20201120_DSC6344_transparent.png#/media/Archivo:MSI_GeForce_RTX_2080_VENTUS_OC_Radiatoren_20201120_DSC6344_transparent.png"><img
+            src="https://upload.wikimedia.org/wikipedia/commons/1/15/MSI_GeForce_RTX_2080_VENTUS_OC_Radiatoren_20201120_DSC6344_transparent.png"
+            alt="MSI GeForce RTX 2080 VENTUS OC Radiatoren 20201120 DSC6344 transparent.png" height="293"
+            width="640"></a><br>De <a href="//commons.wikimedia.org/wiki/User:PantheraLeo1359531"
+          title="User:PantheraLeo1359531">PantheraLeo1359531</a> - <span class="int-own-work" lang="es">Trabajo
+          propio</span>, <a href="https://creativecommons.org/licenses/by/4.0"
+          title="Creative Commons Attribution 4.0">CC BY 4.0</a>, <a class="link"
+          href="https://commons.wikimedia.org/w/index.php?curid=123677062">Enlace</a></p>
+    </center>
+
+  </div>
+</body>
+
+{% endblock %}

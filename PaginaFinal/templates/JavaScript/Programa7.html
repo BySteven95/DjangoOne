@@ -1,0 +1,27 @@
+{% extends 'layouts/base6.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<main>
+  <div class="alert alert-danger d-none" role="alert" id="alert">
+    A simple danger alert—check it out!
+  </div>
+  <h1 class="centrado">Programa 7</h1>
+  <form class="form" id="contenido">
+    <p>Ingrese la candidad de personas a ingresar</p>
+    <input type="number" class="buttons" id="Cantidad" required>
+    <button class="buttons" type="submit" id="btnOK">OK</button>
+  </form>
+
+  <section class="form">
+    <center>
+      <button class="buttons" id="btnBACK">Volver</button>
+    </center>
+  </section>
+</main>
+
+<script src="{% static 'Programa7.js' %}"></script>
+  
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'layouts/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<body>
+  <h1 class="centrado">Nvidia Reflex</h1>
+  <div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-cXg7GQogAE?si=qOxxC890IEwjeev5"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+    <p>
+      un nuevo conjunto de API para los desarrolladores de juegos, que permite reducir y medir la latencia de
+      renderización. Al integrarse directamente con el juego, el modo Latencia baja de Reflex alinea el trabajo del
+      motor
+      del juego para completarlo justo a tiempo antes de la renderización, lo que elimina la lista de prioridad de
+      renderización de la GPU y reduce la presión de la CPU. Esto ofrece reducciones de latencia más allá de las
+      técnicas
+      existentes de solo driver, como el modo de Latencia ultrabaja de NVIDIA.
+    </p>
+    <center>
+      <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/news/reflex-low-latency-platform/nvidia-reflex-system-latency-performance-chart.png" alt="Latencia con y sin Reflex" width="60%">
+    </center>
+    
+  </div>
+</body>
+
+{% endblock %}

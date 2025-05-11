@@ -1,0 +1,52 @@
+{% extends 'layouts/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<body>
+
+  <div>
+    <h1>¿Qué es NVIDIA?</h1>
+    <p>Nvidia Corporation es una empresa de software y fabless que diseña unidades de procesamiento de gráficos (GPU),
+      interfaz de programación de aplicaciones (API) para ciencia de datos y computación de alto rendimiento, así como
+      unidades de sistema en chip (SoC) para la computación móvil y el mercado automotriz. Nvidia es líder mundial en
+      hardware
+      y software de inteligencia artificial. Su línea profesional de GPU se utiliza en estaciones de trabajo para
+      aplicaciones
+      en campos como arquitectura, ingeniería y
+      construcción, medios y entretenimiento, automoción,
+      investigación científica y diseño de fabricación.
+    </p>
+  </div>
+
+  <div>
+    <h1>¿Quíen la fundó?</h1>
+    <img class="floatderecha" src="{% static 'Jensen_Huang_at_Computex_Taipei.jpg' %}" alt="Jensen Huang en la Computex">
+    <p>La empresa fue fundada el 5 de abril de 1993 por Jensen Huang (CEO a partir de 2022), un ingeniero eléctrico
+      taiwanés que anteriormente fue director de CoreWare en LSI Logic y diseñador de microprocesadores en AMD Chris
+      Malachowsky, ingeniero que trabajó en SunMicrosystems
+      y Curtis Priem, quien anteriormente fue ingeniero senior y diseñador de chips gráficos en IBM y Sun Microsystems.
+    <h1>¿Qué hace a NVIDIA una empresa importante en el sector informático?</h1>
+    <p>NVIDIA se convirtió con el pasar del tiempo en una de las empresas más cotizadas en el mercado de fabricación de
+      tarjetas gráficas,
+      estas siendo especialmente deseadas por parte de las grandes compañías de servidores e inteligencia artificial,
+      especialmente porterior al
+      lanzamiento de la serie RTX.
+    </p>
+  </div>
+
+  <div>
+    <h1>¿Qué es una tarjeta gráfica?</h1>
+    <p>Una tarjeta gráfica es un componente electrónico propio de equipos de computo de escritorio y portátiles además
+      de servidores cuyo propósito
+      es el cálculo y procesamiento de datos gráficos facilitando así la producción y calculo de datos en masa,
+      permitiendo usarlas en campos como
+      la minería de datos, criptografía, producción de contenido audiovisual, etc.
+    </p>
+    <center><img src="{% static 'tarjeta_gráfica.png' %}" alt="Ejemplo de tarjeta gráfica" width="40%" height="45%"></center>
+  </div>
+
+</body>
+
+{% endblock %}
+

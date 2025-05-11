@@ -1,0 +1,116 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Nvidia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{% static 'icon.png' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+  </head>
+  
+  <header>
+    <center>
+      <a href="/">
+        <img src="{% static 'icon.png' %}" width="40px" height="40px" alt="Nvidia logo">
+        <font face="Arial,Helvetica,Sans-Serif" size=50px color=white>NVIDIA</font>
+      </a>
+    </center>
+  </header>
+  
+  <nav>
+    <ul class="nav">
+      <li><a href="/">Inicio</a></li>
+      <li><a href="">Generaciones GeForce</a>
+        <ul>
+          <li><a href="">1999 - 2005</a>
+            <ul>
+              <li><a href="/wiki/pagina1">GeForce 256</a></li>
+              <li><a href="/wiki/pagina2">GeForce 2</a></li>
+              <li><a href="/wiki/pagina3">GeForce 3</a></li>
+              <li><a href="/wiki/pagina4">GeForce 4</a></li>
+              <li><a href="/wiki/pagina5">GeForce FX (5)</a></li>
+              <li><a href="/wiki/pagina6">GeForce 6</a></li>
+              <li><a href="/wiki/pagina7">GeForce 7</a></li>
+            </ul>
+          </li>
+          <li><a href="">2006 - 2010</a>
+            <ul>
+              <li><a href="/wiki/pagina8">GeForce 8</a></li>
+              <li><a href="/wiki/pagina9">GeForce 9</a></li>
+              <li><a href="/wiki/pagina10">GeForce GT/GTS 100</a></li>
+              <li><a href="/wiki/pagina11">GeForce GT/GTS/GTX 200</a></li>
+              <li><a href="/wiki/pagina12">GeForce GT 300</a></li>
+              <li><a href="/wiki/pagina13">GeForce GT/GTX 400</a></li>
+              <li><a href="/wiki/pagina14">GeForce GT/GTX 500</a></li>
+            </ul>
+          </li>
+          <li><a href="">2011 - 2015</a>
+            <ul>
+              <li><a href="/wiki/pagina15">GeForce GT/GTX 600</a></li>
+              <li><a href="/wiki/pagina16">GeForce GT/GTX 700</a></li>
+              <li><a href="/wiki/pagina17">GeForce GTX 900</a></li>
+            </ul>
+          </li>
+          <li><a href="">2016 - 2020</a>
+            <ul>
+              <li><a href="/wiki/pagina18">GeForce GT/GTX 10 o 1000</a></li>
+              <li><a href="/wiki/pagina19">GeForce GTX 16 o 1600</a></li>
+              <li><a href="/wiki/pagina20">GeForce RTX 20 o 2000</a></li>
+              <li><a href="/wiki/pagina21">GeForce RTX 30 o 3000</a></li>
+            </ul>
+          </li>
+          <li><a href="">2021 - presente</a>
+            <ul>
+              <li><a href="/wiki/pagina22">GeForce RTX 40 o 4000</a></li>
+            </ul>
+          </li>
+          <li><a href="">Otras</a>
+            <ul>
+              <li><a href="/wiki/pagina23">Quadro</a></li>
+              <li><a href="/wiki/pagina24">Tesla</a></li>
+              <li><a href="/wiki/pagina26">GRID</a></li>
+              <li><a href="/wiki/pagina27">nForce</a></li>
+              <li><a href="/wiki/pagina28">GoForce</a></li>
+              <li><a href="/wiki/pagina29">Tegra</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="">Tecnologías NVIDIA</a>
+        <ul>
+          <li><a href="/wiki/pagina30">DLSS</a></li>
+          <li><a href="/wiki/pagina31">NVENC</a></li>
+          <li><a href="/wiki/pagina32">Physx</a></li>
+          <li><a href="/wiki/pagina35">NVIDIA Reflex</a></li>
+        </ul>
+      </li>
+      <li><a href="/auth/login">Tienda</a></li>
+      <li><a href="/contacto">Contacto</a></li>
+      <li><a href="/JavaScript/Index">Ejercicios</a></li>
+    </ul>
+  </nav>
+
+  {% block content %}
+  {% endblock %}
+
+  <footer>
+    <center>
+      <hr size="5" width="95%" color="#76b900">
+      <a href="https://www.facebook.com/NVIDIA/?locale=es_LA"> <img class="centrada" src="{% static 'Facebook.png' %}"
+          width="50px" height="50px"></a>
+      <a href="https://twitter.com/NVIDIAGeForce?s=20"> <img class="centrada" src="{% static 'Twitter.png' %}" width="50px"
+          height="50px"></a>
+      <a href="https://www.nvidia.com/es-la/"><img class="centrada" src="{% static 'icon.png' %}" width="50px"
+          height="50px"></a>
+      <a href="https://www.instagram.com/nvidiageforce/"><img class="centrada" src="{% static 'Instagram.png' %}" width="50px"
+          height="50px"></a>
+      <a href="https://www.youtube.com/@NVIDIA"><img class="centrada" src="{% static 'Youtube.png' %}" width="50px"
+          height="50px"></a>
+      <p>©DanielWorks 2023</p>
+    </center>
+  </footer>
+
+</html>

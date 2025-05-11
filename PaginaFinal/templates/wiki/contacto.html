@@ -1,0 +1,38 @@
+{% extends 'layouts/base2.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<body>
+  <h1 class="centrado">Contacto</h1>
+  <section class="form-register">
+    <h4>Datos de contacto</h4>
+    <form action="">
+      <p>Tipo de documento</p>
+      <select class="controls" name="tipo">
+        <option value="1">Tarjeta de Identidad: TI</option>
+        <option value="2">Cedula de Ciudadania: CC</option>
+        <option value="3">Pasaporte: PSP</option>
+        <option value="4">Cedula de Extranjeria: CE</option>
+        <option value="4">Otro</option>
+        <option value="5" selected>Seleccione un tipo</option>
+      </select>
+      <p>Numero de Documento</p>
+      <input class="controls" type="number" name="numero" required>
+      <p>Nombres</p>
+      <input class="controls" name="Nombres" type="text">
+      <p>Apellidos</p>
+      <input class="controls" name="Apellidos" type="text">
+      <p>Email</p>
+      <input class="controls" name="Email" type="email">
+      <p>Fecha de nacimiento</p>
+      <input class="controls" name="Nacimiento" type="date">
+      <p>Comentarios</p>
+      <textarea class="controls" name="comentario"></textarea>
+      <button class="buttons" type="submit">Enviar</button>
+    </form>
+  </section>
+</body>
+
+{% endblock %}

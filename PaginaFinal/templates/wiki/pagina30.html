@@ -1,0 +1,38 @@
+{% extends 'layouts/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<body>
+  <h1 class="centrado">Deep Learning Super Sampling</h1>
+  <div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rjWh3ZtyXGg?si=tgeTyrNEGT-ngT7z"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+    <p>
+      El Supermuestreo de Aprendizaje Profundo (DLSS por sus siglas en inglés) es una tecnología de escalado de imágenes
+      desarrollada por Nvidia y exclusiva de las tarjetas gráficas de Nvidia para uso en tiempo real en videojuegos
+      seleccionados, que utiliza aprendizaje profundo para escalar imágenes de menor resolución a una resolución más
+      alta para visualizarlas en monitores de grandes resoluciones. Nvidia afirma que esta tecnología rescala las
+      imágenes con una calidad similar a la de una imagen en alta resolución, pero con menos cálculo realizado por la
+      tarjeta gráfica, lo que permite configuraciones gráficas y fotogramas por segundo más altos para una resolución
+      determinada.
+    </p>
+    <p>
+      A partir de diciembre de 2020, esta tecnología está disponible exclusivamente en las GPU de las series GeForce RTX
+      20 y GeForce RTX 30.
+    </p>
+    <p><strong>Hasta la fecha se han lanzado 4 versiones destacables de este software de reescalado:</strong></p>
+    <ul class="listaintegrada">
+      <li>DLSS 1.0 (Supermuestreo)</li>
+      <li>DLSS 2.0 (Supermuestreo v2)</li>
+      <li>DLSS 3.0 (Generación de cuadros)</li>
+      <li>DLSS 3.5 (Reconstrucción del trazado de rayos)</li>
+    </ul>
+  </div>
+
+</body>
+
+{% endblock %}

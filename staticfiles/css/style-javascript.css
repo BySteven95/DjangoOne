@@ -1,0 +1,134 @@
+*:not(.nav, .centrado, header, footer, body, div){
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 50px;
+  color: whitesmoke;
+}
+
+body{
+  background-image: url('images/matrix.jpg');
+  background-size: cover;
+}
+
+nav {
+  background-color: #273032;
+  color: #FFF;
+  display: flex;
+}
+
+.subtitulo{
+  margin-left: 10%;
+}
+
+.navlist {
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 40px;
+}
+
+ul {
+  margin: 0px;
+}
+
+li {
+  color: whitesmoke;
+  font-family: Arial, Helvetica, Sans-Serif;
+  ;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.centrado {
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 50px;
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+h1{
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 50px;
+  color: whitesmoke;
+}
+
+.form {
+  width: 400px;
+  background: #181d1f;
+  padding: 30px;
+  margin: auto;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  margin-bottom: 40px;
+}
+
+.form h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.form p {
+  font-size: 18px;
+}
+
+
+.form .buttons {
+  width: 100%;
+  background: #008F11;
+  border: none;
+  padding: 12px;
+  color: whitesmoke;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+.form .buttons:hover {
+  background: #003B00;
+  color: whitesmoke;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+div{
+  margin: auto;
+  width: 98%;
+}
+
+table.customTable {
+  margin: 10%;
+  width: 80%;
+  background-color: #181D1F;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #008F11;
+  border-style: solid;
+  color: #FFFFFF;
+}
+
+table.customTable td, table.customTable th {
+  border-width: 2px;
+  border-color: #008F11;
+  border-style: solid;
+  padding: 5px;
+}
+
+table.customTable thead {
+  background-color: #008F11;
+}
+
+footer > center > p{
+  font-family: Arial, Helvetica, Sans-Serif;
+  color: gray;
+}

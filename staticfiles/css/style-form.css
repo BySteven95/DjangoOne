@@ -1,0 +1,300 @@
+*:not(.nav, .centrado, header, footer, body, div){
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header, footer{
+  padding: 4px;
+}
+
+@font-face {
+  font-family: 'GeForce Bold';
+  src: url('Fuentes/GeForce-Bold/GeForce-Bold.eot');
+  src: url('Fuentes/GeForce-Bold/GeForce-Bold.eot?#iefix') format('embedded-opentype'),
+    url('Fuentes/GeForce-Bold/GeForce-Bold.woff') format('woff'),
+    url('Fuentes/GeForce-Bold/GeForce-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  background-color: #000;
+}
+
+nav {
+  background-color: #273032;
+  color: #FFF;
+  display: flex;
+}
+
+.subtitulo{
+  margin-left: 10%;
+}
+
+.navlist {
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 40px;
+}
+
+ul {
+  margin: 0px;
+}
+
+li {
+  color: whitesmoke;
+  font-family: Arial, Helvetica, Sans-Serif;
+  ;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.nav>li {
+  float: left;
+}
+
+.nav li a {
+  background-color: #273032;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+}
+
+.nav li a:hover {
+  background-color: #76b900;
+}
+
+.nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+
+.nav li:hover>ul {
+  display: block;
+}
+
+.nav li ul li {
+  position: relative;
+}
+
+.nav li ul li ul {
+  left: 140px;
+  top: 0px;
+}
+
+
+.centrado {
+  font-family: 'GeForce Bold', Arial, Helvetica, Sans-Serif;
+  font-size: 50px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+h1{
+  font-family: 'GeForce Bold', Arial, Helvetica, Sans-Serif;
+  font-size: 50px;
+  color: whitesmoke;
+}
+
+.form-register {
+  width: 400px;
+  background: #273032;
+  padding: 30px;
+  margin: auto;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  margin-bottom: 40px;
+}
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  width: 100%;
+  background: #273032;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #76b900;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: whitesmoke;
+}
+
+.form-register p {
+  font-size: 18px;
+}
+
+.form-register a {
+  color: #76b900;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: #76b900;
+  text-decoration: underline;
+}
+
+.form-register .buttons {
+  width: 100%;
+  background: #76b900;
+  border: none;
+  padding: 12px;
+  color: whitesmoke;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+.form-register .buttons:hover {
+  background: #5e9401;
+  color: whitesmoke;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+
+.container{
+  padding: 1%;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.card{
+  width: 350px;
+  height: 420px;
+  border-radius: 20px;
+  background-color: #273032;
+  margin: 1%;
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(118,185,0,1);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(118,185,0,1);
+  box-shadow: 0px 0px 10px 4px rgba(118,185,0,1);
+}
+
+.card-img{
+  width: 100%;
+  height: 250px;
+}
+
+.card-img .img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.card-img .img:hover{
+  transform: translateY(-15px);
+}
+
+.card-body{
+  padding: 20px;
+  font-family: 'GeForce Bold', sans-serif;
+}
+
+.card-body h3{
+  color: #ffff;
+  font-size: 28px;
+}
+
+.card-body p{
+  color: #ffff;
+  font-size: 14px;
+}
+
+.card-body .buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn{
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+}
+
+.btn-cart{
+  width: 210px;
+  color: #ffff;
+  padding: 14px 24px;
+  background-color: #76b900;
+  transition: 0.2s all;
+}
+
+.btn-cart:hover{
+  color: #144E5A;
+  background-color: #ffff;
+  border: 1px solid #76b900;
+}
+
+.btn-like{
+  background-color: #cf2f5f;
+  padding: 8px 14px;
+  transition: 1s;
+}
+
+.btn-like:hover{
+  transform: translateY(-15px);
+}
+
+.btn-like{
+  color: #ffff;
+  font-size: 20px;
+}
+
+footer > center > p{
+  font-family: Arial, Helvetica, Sans-Serif;
+  color: gray;
+}
+
+.alert-error{
+  width: 80%;
+  background: rgb(255, 156, 145);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid rgb(185, 24, 24);
+  font-family: 'calibri';
+  font-size: 18px;
+  color: rgb(185, 24, 24);
+}
+
+.alert-exito{
+  width: 80%;
+  background: aquamarine;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid green;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: green;
+}

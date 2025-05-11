@@ -1,0 +1,40 @@
+{% extends 'layouts/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<body>
+  <h1 class="centrado">Nvidia Enconder</h1>
+  <div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bpoDanWJ4Cw?si=DemYHBEdNiCJ2k0n"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+    <p>
+      Nvidia NVENC (abreviatura de Nvidia Encoder) es una característica de las tarjetas gráficas Nvidia que realiza la
+      codificación de video, descargando esta tarea de cómputo intensivo de la CPU a una parte dedicada de la GPU. Se
+      introdujo con la serie GeForce 600 basada en Kepler en marzo de 2012.
+    </p>
+    <p>
+      El codificador es compatible con muchos programas de grabación y transmisión en vivo, como vMix, Wirecast, Open
+      Broadcaster Software (OBS) y Bandicam, así como con aplicaciones de edición de video, como Adobe Premiere Pro o
+      DaVinci Resolve . También funciona con la captura de juegos Share, que se incluye en el software GeForce
+      Experience de Nvidia.
+    </p>
+    <p>
+      Las tarjetas gráficas GeForce dirigidas al consumidor admiten oficialmente no más de 3 transmisiones de video
+      codificadas simultáneamente, independientemente del número de tarjetas instaladas, pero esta restricción se puede
+      eludir en los sistemas Linux y Windows aplicando un parche no oficial a los controladores. Al hacerlo, también se
+      desbloquea NVIDIA Frame Buffer Capture (NVFBC), una rápida API de captura de escritorio que utiliza las
+      capacidades de la GPU y su controlador para acelerar la captura. Las tarjetas profesionales admiten entre 3 y
+      transmisiones simultáneas sin restricciones por tarjeta, según el modelo de tarjeta y la calidad de compresión.
+    </p>
+    <p>
+      Los chips Nvidia también cuentan con un decodificador integrado, NVDEC (abreviatura de Nvidia Decoder), para
+      descargar la decodificación de video de la CPU a una parte dedicada de la GPU.
+    </p>
+  </div>
+</body>
+
+{% endblock %}

@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Programas Desarrollo Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="{% static 'icon_js.png' %}">
+  <link rel="stylesheet" href="{% static 'style-javascript.css' %}">
+  
+</head>
+
+<body>
+
+  <header>  
+  </header>
+
+
+  <main>
+    <h1 class="centrado">Programas</h1>
+    <section class="form">
+        <center>
+          <button class="buttons" onclick="redirect1()">Programa 1</button>
+          <button class="buttons" onclick="redirect2()">Programa 2</button>
+          <button class="buttons" onclick="redirect3()">Programa 3</button>
+          <button class="buttons" onclick="redirect4()">Programa 4</button>
+          <button class="buttons" onclick="redirect5()">Programa 5</button>
+          <button class="buttons" onclick="redirect6()">Programa 6</button>
+          <button class="buttons" onclick="redirect7()">Programa 7</button>
+          <button class="buttons" onclick="redirect8()">Programa 8</button>
+          <button class="buttons" onclick="redirect9()">Programa 9</button>
+          <button class="buttons" onclick="redirect10()">Programa 10</button>
+        </center>
+    </section>
+
+    <section class="form">
+      <center>
+        <button class="buttons" id="btnBACK">Volver</button>
+      </center>
+    </section>
+    
+  </main>
+  <script src="{% static 'index.js' %}"></script>  
+</body>
+
+<footer>
+
+</footer>
+
+</html>

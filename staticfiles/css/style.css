@@ -1,0 +1,158 @@
+body {
+  background-color: #000000;
+}
+
+@font-face {
+  font-family: 'GeForce Bold';
+  src: url('Fuentes/GeForce-Bold/GeForce-Bold.eot');
+  src: url('Fuentes/GeForce-Bold/GeForce-Bold.eot?#iefix') format('embedded-opentype'),
+    url('Fuentes/GeForce-Bold/GeForce-Bold.woff') format('woff'),
+    url('Fuentes/GeForce-Bold/GeForce-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.centrado {
+  font-family: 'GeForce Bold', Arial, Helvetica, Sans-Serif;
+  font-size: 50px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+iframe {
+  float: right;
+  margin: 10px;
+  position: relative;
+}
+
+h1 {
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 40px;
+  color: whitesmoke;
+}
+
+h2 {
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+p {
+  font-family: Arial, Helvetica, Sans-Serif;
+  color: whitesmoke;
+}
+
+div {
+  margin: auto;
+  width: 90%;
+}
+
+.floatderecha {
+  float: right;
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+.floatizquierda {
+  float: left;
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+nav {
+  background-color: #273032;
+  color: #FFF;
+  display: flex;
+}
+
+.navlist {
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 40px;
+}
+
+ul {
+  margin: 0px;
+}
+
+li {
+  color: whitesmoke;
+  font-family: Arial, Helvetica, Sans-Serif;
+  ;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.nav>li {
+  float: left;
+}
+
+.nav li a {
+  background-color: #273032;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+}
+
+.nav li a:hover {
+  background-color: #76b900;
+}
+
+.nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav li:hover>ul {
+  display: block;
+}
+
+.nav li ul li {
+  position: relative;
+}
+
+.nav li ul li ul {
+  left: 140px;
+  top: 0px;
+}
+
+table,
+th,
+td {
+  border: 2px solid whitesmoke;
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, Sans-Serif;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.listaintegrada {
+  list-style: disc;
+}
+
+.link {
+  text-decoration: underline;
+  color: #76b900;
+}
+
+.alineacionizquierda {
+  text-align: match-parent;
+}
+
+footer > center > p{
+  font-family: Arial, Helvetica, Sans-Serif;
+  color: gray;
+}
